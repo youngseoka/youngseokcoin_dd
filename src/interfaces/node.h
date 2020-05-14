@@ -1,9 +1,9 @@
-// Copyright (c) 2018-2019 The Bitcoin Core developers
+// Copyright (c) 2018-2019 The Youngseokcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_INTERFACES_NODE_H
-#define BITCOIN_INTERFACES_NODE_H
+#ifndef YOUNGSEOKCOIN_INTERFACES_NODE_H
+#define YOUNGSEOKCOIN_INTERFACES_NODE_H
 
 #include <amount.h>     // For CAmount
 #include <net.h>        // For CConnman::NumConnections
@@ -36,7 +36,7 @@ namespace interfaces {
 class Handler;
 class Wallet;
 
-//! Top-level interface for a bitcoin node (bitcoind process).
+//! Top-level interface for a youngseokcoin node (youngseokcoind process).
 class Node
 {
 public:
@@ -266,4 +266,4 @@ std::unique_ptr<Node> MakeNode();
 
 } // namespace interfaces
 
-#endif // BITCOIN_INTERFACES_NODE_H
+#endif // YOUNGSEOKCOIN_INTERFACES_NODE_H

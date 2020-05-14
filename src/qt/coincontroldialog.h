@@ -1,9 +1,9 @@
-// Copyright (c) 2011-2018 The Bitcoin Core developers
+// Copyright (c) 2011-2018 The Youngseokcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_COINCONTROLDIALOG_H
-#define BITCOIN_QT_COINCONTROLDIALOG_H
+#ifndef YOUNGSEOKCOIN_QT_COINCONTROLDIALOG_H
+#define YOUNGSEOKCOIN_QT_COINCONTROLDIALOG_H
 
 #include <amount.h>
 
@@ -111,4 +111,4 @@ private Q_SLOTS:
     void updateLabelLocked();
 };
 
-#endif // BITCOIN_QT_COINCONTROLDIALOG_H
+#endif // YOUNGSEOKCOIN_QT_COINCONTROLDIALOG_H

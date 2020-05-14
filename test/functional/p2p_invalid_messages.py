@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2015-2020 The Bitcoin Core developers
+# Copyright (c) 2015-2020 The Youngseokcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test node responses to invalid network messages."""
@@ -13,7 +13,7 @@ from test_framework.mininode import (
     P2PDataStore,
     P2PInterface,
 )
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import YoungseokcoinTestFramework
 
 
 class msg_unrecognized:
@@ -31,7 +31,7 @@ class msg_unrecognized:
         return "{}(data={})".format(self.msgtype, self.str_data)
 
 
-class InvalidMessagesTest(BitcoinTestFramework):
+class InvalidMessagesTest(YoungseokcoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
         self.setup_clean_chain = True

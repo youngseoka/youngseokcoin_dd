@@ -44,7 +44,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>YoungseokcoinGUI</name>
     <message>
         <source>Warning</source>
         <translation>අවවාදය</translation>
@@ -305,6 +305,6 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>youngseokcoin-core</name>
     </context>
 </TS>

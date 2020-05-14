@@ -1,10 +1,10 @@
 // Copyright (c) 2012 Pieter Wuille
-// Copyright (c) 2012-2020 The Bitcoin Core developers
+// Copyright (c) 2012-2020 The Youngseokcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_ADDRMAN_H
-#define BITCOIN_ADDRMAN_H
+#ifndef YOUNGSEOKCOIN_ADDRMAN_H
+#define YOUNGSEOKCOIN_ADDRMAN_H
 
 #include <clientversion.h>
 #include <netaddress.h>
@@ -669,4 +669,4 @@ public:
 
 };
 
-#endif // BITCOIN_ADDRMAN_H
+#endif // YOUNGSEOKCOIN_ADDRMAN_H

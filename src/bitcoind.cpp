@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2020 The Bitcoin Core developers
+// Copyright (c) 2009-2020 The Youngseokcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/youngseokcoin-config.h>
 #endif
 
 #include <chainparams.h>
@@ -52,7 +52,7 @@ static bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/bitcoin.conf are parsed in qt/bitcoin.cpp's main()
+    // If Qt is used, parameters/youngseokcoin.conf are parsed in qt/youngseokcoin.cpp's main()
     SetupServerArgs(node);
     std::string error;
     if (!gArgs.ParseParameters(argc, argv, error)) {
@@ -69,7 +69,7 @@ static bool AppInit(int argc, char* argv[])
         }
         else
         {
-            strUsage += "\nUsage:  bitcoind [options]                     Start " PACKAGE_NAME "\n";
+            strUsage += "\nUsage:  youngseokcoind [options]                     Start " PACKAGE_NAME "\n";
             strUsage += "\n" + gArgs.GetHelpMessage();
         }
 
@@ -95,11 +95,11 @@ static bool AppInit(int argc, char* argv[])
         // Error out when loose non-argument tokens are encountered on command line
         for (int i = 1; i < argc; i++) {
             if (!IsSwitchChar(argv[i][0])) {
-                return InitError(Untranslated(strprintf("Command line contains unexpected token '%s', see bitcoind -h for a list of options.\n", argv[i])));
+                return InitError(Untranslated(strprintf("Command line contains unexpected token '%s', see youngseokcoind -h for a list of options.\n", argv[i])));
             }
         }
 
-        // -server defaults to true for bitcoind but not for the GUI so do this here
+        // -server defaults to true for youngseokcoind but not for the GUI so do this here
         gArgs.SoftSetBoolArg("-server", true);
         // Set this early so that parameter interactions go to console
         InitLogging();
@@ -172,7 +172,7 @@ int main(int argc, char* argv[])
 #endif
     SetupEnvironment();
 
-    // Connect bitcoind signal handlers
+    // Connect youngseokcoind signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);

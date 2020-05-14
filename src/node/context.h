@@ -1,9 +1,9 @@
-// Copyright (c) 2019-2020 The Bitcoin Core developers
+// Copyright (c) 2019-2020 The Youngseokcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_NODE_CONTEXT_H
-#define BITCOIN_NODE_CONTEXT_H
+#ifndef YOUNGSEOKCOIN_NODE_CONTEXT_H
+#define YOUNGSEOKCOIN_NODE_CONTEXT_H
 
 #include <memory>
 #include <vector>
@@ -46,4 +46,4 @@ struct NodeContext {
     ~NodeContext();
 };
 
-#endif // BITCOIN_NODE_CONTEXT_H
+#endif // YOUNGSEOKCOIN_NODE_CONTEXT_H
